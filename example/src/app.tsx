@@ -1,20 +1,21 @@
 import * as React from 'react'
 
-import { PluginDemo } from '../../src/component/PluginDemo/index'
-
-// tslint:disable-next-line:no-empty-interface
-interface IProps {}
-
-// tslint:disable-next-line:no-empty-interface
-interface IStates {}
-class App extends React.Component<IProps, IStates> {
-    render() {
-        return (
-            <React.Fragment>
-                <PluginDemo title={'111'} />
-            </React.Fragment>
-        )
-    }
+import SeamlessRoll from '../../src/component/SeamlessRoll';
+class App extends React.Component<any, any> {
+  render() {
+    const arr = new Array(100);
+    console.log(arr.length)
+    return (
+      <React.Fragment>
+        <div style={{ width: '300px', height: '500px', border: '1px solid #333' }}>
+          <SeamlessRoll>
+            <div>是否规范激光焊</div>
+            <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>  <div>是否规范激光焊</div>
+          </SeamlessRoll>
+        </div>
+      </React.Fragment>
+    )
+  }
 }
 
 export default App

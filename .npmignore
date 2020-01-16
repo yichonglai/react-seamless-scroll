@@ -7,5 +7,6 @@
 .editorconfig
 tslint.json
 tsconfig.json
-note.md
 *.log
+yarn.lock
+.DS_Store
