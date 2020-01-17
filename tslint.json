@@ -4,7 +4,11 @@
     "no-console": false,
     "object-literal-sort-keys": false,
     "member-access": false,
-    "ordered-imports": false
+    "ordered-imports": false,
+    "interface-name" : [true, "never-prefix"],
+    "jsdoc-format": false,
+    "no-bitwise": false,
+    "curly": false
   },
   "linterOptions": {
     "exclude": ["**/*.json", "node_modules"]

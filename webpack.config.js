@@ -1,11 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const htmlWebpackPlugin = new HtmlWebpackPlugin({
-    template: path.join(__dirname, './example/src/index.html'),
-    filename: './index.html',
-})
 
 module.exports = {
+    mode: 'development',
     entry: path.join(__dirname, './example/src/index.tsx'),
     output: {
         path: path.join(__dirname, 'example/dist'),
@@ -38,15 +35,26 @@ module.exports = {
             },
         ],
     },
-    //映射工具
-    // devtool: 'source-map',
+    devtool: 'cheap-module-eval-source-map',
     //处理路径解析
     resolve: {
         //extensions 拓展名
         extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
+        alias: {
+            '@example': path.resolve(__dirname, './example/'),
+            '@components': path.resolve(__dirname, './src/components/'),
+        }
     },
-    plugins: [htmlWebpackPlugin],
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: './index.html',
+            template: path.join(__dirname, './example/src/index.html'),
+        }),
+    ],
     devServer: {
-        port: 3005,
+        port: 3006,
+        compress: true,
+        hot: true,
+        historyApiFallback: true,
     },
 }

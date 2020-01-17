@@ -1,10 +1,9 @@
 import * as React from 'react'
 
-import SeamlessRoll from '../../src/component/SeamlessRoll';
+import SeamlessRoll from '@components/SeamlessRoll';
+
 class App extends React.Component<any, any> {
   render() {
-    const arr = new Array(100);
-    console.log(arr.length)
     return (
       <React.Fragment>
         <div style={{ width: '300px', height: '500px', border: '1px solid #333' }}>

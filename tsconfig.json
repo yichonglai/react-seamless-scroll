@@ -24,6 +24,8 @@
     "jsx": "react",
     "baseUrl": "./",
     "paths": {
+      "@example": ["./example/*"],
+      "@components": ["./src/components/*"],
       "*": [
         "types/*"
       ]
