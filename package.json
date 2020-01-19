@@ -1,6 +1,6 @@
 {
   "name": "react-seamless-scroll",
-  "version": "0.0.1-beta",
+  "version": "1.0.1",
   "description": "react自动无缝滚动组件",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",

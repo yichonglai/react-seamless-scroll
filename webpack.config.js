@@ -15,7 +15,6 @@ module.exports = {
                 loader: 'ts-loader',
             },
             {
-                // pre/nomal/post - loader的执行顺序 - 前/中/后
                 enforce: 'pre',
                 test: /\.tsx?/,
                 loader: 'source-map-loader',
@@ -36,9 +35,7 @@ module.exports = {
         ],
     },
     devtool: 'cheap-module-eval-source-map',
-    //处理路径解析
     resolve: {
-        //extensions 拓展名
         extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
         alias: {
             '@example': path.resolve(__dirname, './example/'),
@@ -53,7 +50,7 @@ module.exports = {
     ],
     devServer: {
         port: 3006,
-        compress: true,
+        // compress: true,
         hot: true,
         historyApiFallback: true,
     },
