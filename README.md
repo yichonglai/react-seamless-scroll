@@ -9,7 +9,7 @@
 ---
 
 - `npm install react-seamless-scroll -S`
-- `import react-seamless-scroll from 'react-seamless-scroll'`;
+- `import ReactSeamlessScroll from 'react-seamless-scroll'`;
 
 ## 使用方法
 
